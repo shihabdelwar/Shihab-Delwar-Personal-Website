@@ -1,8 +1,8 @@
-:root{
+:root {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -15,43 +15,45 @@ body {
     align-items: stretch; /* Ensure body aligns its children correctly */
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 1rem;
 }
-body::-webkit-scrollbar-track{
+
+body::-webkit-scrollbar-track {
     background: rgb(31, 23, 72);
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background: #202e6e;
 }
-main{
+
+main {
     font-size: 1rem;
     padding: 1rem;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 6rem; /* Create space for the fixed navbar */
     color: white; /* Ensure text is readable against the dark background */
 }
+
 .navbar {
     display: flex;
     flex-direction: column;
-    /* width: 6rem;
-    height: 100vh; */
     left: 0;
     position: fixed;
     background-color: #3b3d45;
     transition: 0.5s ease;
 }
 
-.navbar:hover{
+.navbar:hover {
     width: 12rem;
     transition: 0.5s ease;
-
 }
-.navbar:hover .navbar-nav{
+
+.navbar:hover .navbar-nav {
     font-size: 1.9rem;
     transition: 0.2s ease-in-out;
-
 }
+
 .navbar-nav {
     list-style: none;
     padding: 0;
@@ -60,6 +62,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
 .navbar-nav li {
     margin-bottom: 2rem; /* Adds space between each list item */
     margin-top: 0rem;
@@ -86,18 +89,18 @@ a:hover {
     box-shadow: 0 0 2rem var(--clr);
 }
 
-a:before{
+a:before {
     content: '';
     position: absolute;
     background: #27282c;
 }
 
-a span{
+a span {
     position: relative;
     z-index: 1;
 }
 
-a i::before{
+a i::before {
     content: '';
     position: absolute;
     top: 0rem;
@@ -109,7 +112,7 @@ a i::before{
     transition: 0.5s;
 }
 
-a i::after{
+a i::after {
     content: '';
     position: absolute;
     bottom: 0rem;
@@ -121,13 +124,13 @@ a i::after{
     transition: 0.5s;
 }
 
-a:hover i::before{
+a:hover i::before {
     width: 20%;
     left: 4rem;
     background: #27282c;
 }
 
-a:hover i::after{
+a:hover i::after {
     width: 20%;
     left: 4rem;
     background: #27282c;
@@ -137,7 +140,7 @@ a:hover i::after{
     text-align: left; /* Ensure the text is left-aligned */
 }
 
-.logo{
+.logo {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -149,41 +152,74 @@ a:hover i::after{
     transform: rotate(0deg);
 }
 
-.navbar:hover .logo{
-    transform: rotate(360deg);    
+.navbar:hover .logo {
+    transform: rotate(360deg);
     transition: 0.3s ease-in-out;
     color: #0f1b4b;
 }
 
-#h3, li{
+#h3,
+li {
     color: whitesmoke;
 }
 
 @media only screen and (min-width: 600px) {
-    .navbar{
+    .navbar {
         top: 0;
         width: 6rem;
         height: 100vh;
     }
-    .navbar:hover{
+
+    .navbar:hover {
         width: 12rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar{
+    .navbar {
         bottom: 0;
         height: 6rem;
         width: 100vh;
     }
-    .navbar:hover{
+
+    .navbar:hover {
         width: 12rem;
     }
+
     .navbar-nav {
         flex-direction: row;
         align-items: center;
     }
-    main{
+
+    main {
         margin: 0;
     }
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: auto; /* Push the section to the bottom */
+    padding: 2rem;
+    background-color: #3b3d45;
+    color: white;
+}
+
+.contact-section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.contact-section li {
+    margin-bottom: 1rem;
+}
+
+.contact-section li a {
+    color: var(--clr);
+    position: relative;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
 }
