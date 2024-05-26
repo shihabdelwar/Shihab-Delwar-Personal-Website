@@ -28,7 +28,7 @@ I am a student majoring in Computer Science at Binghamton University.
 ## Contact
 
 - **Email**: [shihabdelwar@gmail.com](mailto:your-email@example.com)
-- **LinkedIn**: [Shihab Delwar](https://www.linkedin.com/in/shihabdelwar)
+- **LinkedIn**: [Shihab Delwar](https://www.linkedin.com/in/shihab-delwar)
 ----
 
 Thank you for visiting my repository! I hope you enjoy exploring my personal website. If you have any questions or feedback, don't hesitate to reach out.
