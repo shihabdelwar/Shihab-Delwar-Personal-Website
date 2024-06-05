@@ -56,7 +56,7 @@ main {
 
 .navbar-nav {
     list-style: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -83,10 +83,10 @@ a {
 
 a:hover {
     letter-spacing: 0.2em;
-    font-size: 0.75em;
+    font-size: 1em;
     background: var(--clr);
     color: white;
-    box-shadow: 0 0 2rem var(--clr);
+    box-shadow: 0 0 20rem var(--clr);
 }
 
 a:before {
@@ -152,11 +152,11 @@ a:hover i::after {
     transform: rotate(0deg);
 }
 
-.navbar:hover .logo {
+/* .navbar:hover .logo {
     transform: rotate(360deg);
     transition: 0.3s ease-in-out;
     color: #0f1b4b;
-}
+} */
 
 #h3,
 li {
@@ -171,7 +171,7 @@ li {
     }
 
     .navbar:hover {
-        width: 12rem;
+        width: 15rem;
     }
 }
 
@@ -179,23 +179,41 @@ li {
     .navbar {
         bottom: 0;
         height: 6rem;
-        width: 100vh;
+        width: 100vw;
+        background-color: #3b3d45;
+        font-size: 0.75rem; /* Adjust font size for smaller screens */
+        padding: 0; /* Remove all padding */
     }
 
     .navbar:hover {
-        width: 12rem;
+        width: 100vw;
     }
 
     .navbar-nav {
         flex-direction: row;
         align-items: center;
+        justify-content: space-around; /* Distribute items evenly */
+        width: 100%; /* Ensure navbar-nav takes up the full width */
+        margin: 0; /* Remove all margin */
+        padding: 0; /* Remove all padding */
+    }
+
+    .navbar-nav li {
+        margin: 0; /* Remove margin from list items */
+    }
+
+    .navbar-nav li a {
+        font-size: 0.75rem; /* Adjust font size for smaller screens */
     }
 
     main {
-        margin: 0;
+        margin-left: 0;
+    }
+    
+    .logo {
+        display: none; /* Remove the logo */
     }
 }
-
 .contact-section {
     text-align: center;
     margin-top: auto; /* Push the section to the bottom */
@@ -247,7 +265,7 @@ li {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: var(--clr);
-    font-size: 0.75em;
+    font-size: 1em;
     letter-spacing: 0.1em;
     font-weight: 900;
     padding: 0.5rem 0.5rem;
