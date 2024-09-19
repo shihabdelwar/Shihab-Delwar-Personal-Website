@@ -23,7 +23,7 @@ I am a student majoring in Computer Science at Binghamton University.
 
 1. Navigate to the **Deployments** section of the GitHub Repository
 2. Select **github-pages**
-3. **Click on the url link**
+3. Click on the url link
 
 ## Contact
 
