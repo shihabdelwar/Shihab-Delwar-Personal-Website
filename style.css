@@ -152,11 +152,11 @@ a:hover i::after {
     transform: rotate(0deg);
 }
 
-/* .navbar:hover .logo {
+.navbar:hover .logo {
     transform: rotate(360deg);
     transition: 0.3s ease-in-out;
     color: #0f1b4b;
-} */
+}
 
 #h3,
 li {
