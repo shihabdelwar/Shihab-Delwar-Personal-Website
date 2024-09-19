@@ -21,9 +21,9 @@ I am a student majoring in Computer Science at Binghamton University.
 
 ## How to Use
 
-1. **Clone the Repository**: `git clone https://github.com/your-username/your-repo.git`
-2. **Navigate to the Directory**: `cd your-repo`
-3. **Open `index.html`**: Open the `index.html` file in your web browser to view the website locally.
+1. Navigate to the **Deployments** section of the GitHub Repository
+2. Select **github-pages**
+3. **Open 'https://shihabdelwar.github.io/Shihab-Delwar-Personal-Website/'`**
 
 ## Contact
 
