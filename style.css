@@ -249,8 +249,7 @@ li {
 }
 
 .courses {
-    display: flex;
-    margin-left: auto;
+    text-align: center;
 }
 
 .education-section ul{
@@ -267,4 +266,13 @@ li {
     letter-spacing: 0.1em;
     font-weight: 900;
     padding: 0.5rem 0.5rem;
+}
+
+.experience {
+    display: inline;
+    background-color: #1d2e75;
+
+}
+
+.info{
 }
